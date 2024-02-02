@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)http://172.16.0.246:5500/01_html/03_table_task.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CafeOrder</title>
+    <style>
+      img {
+        width: 150px;
+        height: 150px;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      table {
+        text-align: center;
+      }
+      td {
+        padding: 8px;
+      }
+      h2 {
+        display: flex;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body cz-shortcut-listen="true">
+    <h2>colspan과 rowspan 실습</h2>
+    <table border="1px" cellspacing="0" width="100%">
+      <tbody><tr height="80px">
+        <td colspan="2">1</td>
+        <td rowspan="2" width="200px">2</td>
+      </tr>
+      <tr height="80px">
+        <td rowspan="2">3</td>
+        <td width="300px">center</td>
+      </tr>
+      <tr height="80px">
+        <td colspan="2">4</td>
+      </tr>
+    </tbody></table>
+
+    <h2 style="color: green">스타벅스 실습</h2><table border="1" cellspacing="0">
+      
+      <tbody><tr>
+        <th>구분</th>
+        <th>음료</th>
+        <th>가격</th>
+        <th>이미지</th>
+      </tr>
+      <tr>
+        <td rowspan="2">커피음료</td>
+        <td><a href="https://www.starbucks.co.kr/menu/drink_view.do?product_cd=110563">3</a></td>
+        <td>4,000원</td>
+        <td><img src="./CafeOrder_files/아메리카노.jpeg" alt=""></td>
+      </tr>
+      <tr>
+        <td><a href="https://www.starbucks.co.kr/menu/drink_view.do?product_cd=128692">돌체라떼</a></td>
+        <td>4,800원</td>
+        <td><img src="./CafeOrder_files/돌체라떼.jpeg" alt=""></td>
+      </tr>
+      <tr>
+        <td rowspan="2">주스류</td>
+        <td><a href="https://www.starbucks.co.kr/menu/drink_view.do?product_cd=168016">자바칩 프라푸치노</a></td>
+        <td rowspan="2">5,500원</td>
+        <td><img src="./CafeOrder_files/아이스초코.jpeg" alt=""></td>
+      </tr>
+      <tr>
+        <td>
+          <a href="https://www.starbucks.co.kr/menu/drink_view.do?product_cd=9200000002502">녹차 프라푸치노 사진</a>
+        </td>
+        <td><img src="./CafeOrder_files/녹차프라푸치노.jpeg" alt=""></td>
+      </tr>
+    </tbody></table>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
