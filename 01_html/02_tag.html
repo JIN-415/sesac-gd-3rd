@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tag</title>
+  </head>
+  <body>
+    <h2>오늘의 공부 내용</h2>
+    <p>오늘은 remote repo를 만들어 연결하고, html의 이론을 배웠다. 그리고 지금은 tag에 대해 배우고 있다.</p>
+    <br /><br /><br />
+    <hr />
+    <h2>오늘의 할 일</h2>
+    <!-- ul : 순서가 없는 목록 -->
+    <!-- li : ul이나 ol의 안에서 목록을 작성할 때 사용 -->
+    <!-- ul의  type : disc(default), square, circle, none -->
+    <ul type="square">
+      <li>html 복습하기</li>
+      <li>밥 먹기</li>
+      <li>잠 자기</li>
+    </ul>
+
+    <!-- ol : 순서가 있는 목록 -->
+    <!-- ol의 type : 1(default), a, A, i, I -->
+    <!-- ol의 start : 시작 값을 지정 -->
+    <!-- ol의 reversed : 역순으로 변경 -->
+    <ol type="1" start="5" reversed>
+      <h2>아이스 카페라떼 만들기</h2>
+      <li><strong>우유</strong>를 180ml 컵에 넣습니다.</li>
+      <li><i>얼음</i>을 가득 넣습니다.</li>
+      <li><em>에스프레소 샷</em>을 넣어주면!</li>
+      <li>완성입니다. 맛있게 드세요.</li>
+    </ol>
+
+    <!-- 목록 중첩 -->
+    <ul type="none">
+      <h2>음식 목록</h2>
+      <li>
+        양식
+        <ul>
+          <li>파스타</li>
+          <li>
+            피자
+            <!-- 또 중첩 가능 -->
+            <ul>
+              <li>치즈 피자</li>
+              <li>고구마 피자</li>
+              <li>하와이안 피자</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        중식
+        <ul>
+          <li>짜장면</li>
+          <li>짬뽕</li>
+          <li>볶음밥</li>
+        </ul>
+      </li>
+      <li>
+        일식
+        <ul>
+          <li>스시</li>
+          <li>라멘</li>
+          <li>야끼소바</li>
+        </ul>
+      </li>
+      <li>
+        한식
+        <ul>
+          <li>김치찌개</li>
+          <li>불고기</li>
+        </ul>
+      </li>
+    </ul>
+    <br /><br /><br />
+    <hr />
+    <!-- 상대경로 : 지금 위치에서 불러올 이미지까지의 경로 -->
+    <img src="./imgs/LeastWeasle.jpeg" alt="파도치는 바다 사진" />
+    <!-- 절대경로 : 홈 위치에서 불러올 이미지까지의 경로 -->
+    <img src="/01_html/imgs/마이멜로디1.png" alt="오버워치 캐릭터 디바" />
+    <!-- .으로 시작할 경우 상대경로, /로 시작할 경우 절대경로 -->
+    <!-- 링크 방법 -->
+    <img
+      src="data:image/jpeg;base64,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"
+      alt="구글에서 가져온 사막 이미지 링크"
+    />
+    <br /><br /><br />
+    <hr />
+    <!-- a : 하이퍼링크 태그 -->
+    <!-- a의 herf : 연결할 URL -->
+    <!-- a의 target : _blank(새탭으로), _self(default) -->
+    <!-- a의 title : 마우스를 올리면(호버) 값을 보여줌 -->
+    <a href="https://naver.com" title="기본 target속성의 값은 _self">네이버로 이동(_self)</a>
+    <a href="https://google.com" target="_blank">구글로 이동(_blank)</a>
+    <a href="./01_start_html.html">폴더 내의 html 파일로 이동 가능</a>
+  </body>
+</html>
