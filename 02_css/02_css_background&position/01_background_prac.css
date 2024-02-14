@@ -1,0 +1,51 @@
+/* prac01 배경 적용 실습 */
+.container {
+  width: 800px;
+  height: 500px;
+  background-color: lightblue;
+  margin-bottom: 10px;
+}
+
+.image01 {
+  background-image: url(https://item.kakaocdn.net/do/d84248170c2c52303db27306a00fb861f604e7b0e6900f9ac53a43965300eb9a);
+
+  background-repeat: repeat-x;
+  background-position: center;
+}
+
+.image02 {
+  background-image: url(https://item.kakaocdn.net/do/d84248170c2c52303db27306a00fb861f604e7b0e6900f9ac53a43965300eb9a);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 100px 30px;
+}
+
+.image03 {
+  background-image: url(https://item.kakaocdn.net/do/d84248170c2c52303db27306a00fb861f604e7b0e6900f9ac53a43965300eb9a);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+hr {
+  margin: 100px 0;
+}
+
+/* prac02 선택과제 검색 */
+.search {
+  background-image: url("./img/search-icon.png");
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  padding-left: 35px;
+  border: none;
+  border-radius: 15px;
+
+  background-color: rgb(241, 240, 240);
+  width: 180px;
+  height: 35px;
+}
+
+.search:focus {
+  background-color: rgb(215, 215, 215);
+}
