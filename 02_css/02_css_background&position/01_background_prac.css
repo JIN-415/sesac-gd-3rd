@@ -38,6 +38,7 @@ hr {
   background-repeat: no-repeat;
   background-position: 10px center;
   padding-left: 35px;
+  padding-right: 15px;
   border: none;
   border-radius: 15px;
 
@@ -46,6 +47,11 @@ hr {
   height: 35px;
 }
 
+/* focus 상태일때 outline 있는 거 X */
 .search:focus {
-  background-color: rgb(215, 215, 215);
+  outline: none;
+}
+
+.search:hover:not(input:focus) {
+  background-color: rgb(214, 214, 214);
 }
