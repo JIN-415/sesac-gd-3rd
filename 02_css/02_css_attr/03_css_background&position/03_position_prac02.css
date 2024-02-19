@@ -34,11 +34,12 @@ main {
 }
 .fixed-tab > ul {
   padding: 10px 0;
+  display: flex;
+  justify-content: space-around;
 }
 .fixed-tab > ul > li {
   list-style-type: none;
-  display: inline-block;
-  width: 23%;
+  /* display: inline-block; */
   text-align: center;
 }
 

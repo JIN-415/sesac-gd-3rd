@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .flex-direction-container {
+        width: 500px;
+        height: 500px;
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: beige;
+      }
+      .flex-wrap-container {
+        background-color: beige;
+        margin-top: 20px;
+        width: 500px;
+        height: 500px;
+        display: flex;
+        flex-wrap: wrap;
+        /* 공백 없애기  */
+        /* align-content: flex-start; */
+      }
+      .flex-wrap2-container {
+        background-color: beige;
+        margin-top: 20px;
+        width: 500px;
+        height: 500px;
+        display: flex;
+
+        /* 한 줄 - 가로,세로 정렬 */
+        /* justify-content: center;
+        align-items: center; */
+
+        /* 두 줄 - 하나로 뭉쳐서 가로,세로 수직 정렬 */
+        /* flex-wrap: wrap;
+        justify-content: center;
+        align-content: center; */
+        flex-direction: column;
+
+        /* 두 줄 - 각각의 flex 줄에 가로,세로 수직 정렬 */
+        /* flex-wrap: wrap; */
+        /* justify-content: center;
+        align-items: center; */
+      }
+      .item {
+        width: 100px;
+        height: 200px;
+        font-size: 30px;
+        text-align: center;
+        line-height: 100px;
+      }
+      .item1 {
+        background-color: cornflowerblue;
+      }
+      .item2 {
+        background-color: coral;
+      }
+      .item3 {
+        background-color: pink;
+      }
+      .item4 {
+        background-color: gold;
+      }
+      .item5 {
+        background-color: chartreuse;
+      }
+      .item6 {
+        background-color: lightcoral;
+      }
+      .item7 {
+        background-color: lightgrey;
+      }
+      .item8 {
+        background-color: violet;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- flex-direction 실습 -->
+    <div class="flex-direction-container">
+      <div class="item item1">1</div>
+      <div class="item item2">2</div>
+      <div class="item item3">3</div>
+    </div>
+    <!-- flex-wrap 실습1 -->
+    <div class="flex-wrap-container">
+      <div class="item item1">1</div>
+      <div class="item item2">2</div>
+      <div class="item item3">3</div>
+      <div class="item item4">4</div>
+      <div class="item item5">5</div>
+      <div class="item item6">6</div>
+      <div class="item item7">7</div>
+      <div class="item item8">8</div>
+    </div>
+    <!-- flex-wrap 실습2 -->
+    <div class="flex-wrap2-container">
+      <div class="item item1">1</div>
+      <div class="item item2">2</div>
+      <div class="item item3">3</div>
+      <div class="item item4">4</div>
+      <div class="item item5">5</div>
+      <div class="item item6">6</div>
+      <div class="item item7">7</div>
+      <div class="item item8">8</div>
+    </div>
+  </body>
+</html>
