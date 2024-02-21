@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .ball {
+        width: 100px;
+        height: 100px;
+        background: linear-gradient(60deg, rgba(255, 250, 0, 1) 0%, rgb(255, 115, 0) 100%);
+        border-radius: 50%;
+        position: relative;
+        animation: ball-ani 5s infinite ease-in-out;
+      }
+
+      @keyframes ball-ani {
+        0% {
+          top: 0;
+          left: 0;
+        }
+        25% {
+          top: 0;
+          left: 85%;
+        }
+        50% {
+          top: 200px;
+          left: 85%;
+        }
+        75% {
+          top: 200px;
+          left: 0;
+        }
+        100% {
+          top: 0;
+          left: 0;
+        }
+      }
+
+      .text-box {
+        display: block;
+        margin-top: 300px;
+
+        animation: text-ani 3s infinite ease-in-out;
+      }
+      @keyframes text-ani {
+        from {
+          margin-left: 100%;
+          width: 300%;
+        }
+        to {
+          margin-left: 0;
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="ball"></div>
+    <div class="text-box">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae commodi aliquid rem odio voluptas! Eligendi aliquam,
+      amet soluta ut possimus quia at nam, aspernatur enim, hic molestias veniam autem alias. Lorem ipsum dolor sit amet
+      consectetur adipisicing elit. Laudantium vel facilis ipsam eligendi quia dolore eveniet doloribus dolores eius
+      veniam fugit sint tenetur possimus fuga distinctio asperiores molestiae, modi eos. Lorem ipsum dolor sit amet
+      consectetur adipisicing elit. Perspiciatis alias soluta nulla numquam labore beatae mollitia, repudiandae
+      recusandae vel! Modi obcaecati ad illum quo non explicabo esse culpa tempora odit!
+    </div>
+  </body>
+</html>
