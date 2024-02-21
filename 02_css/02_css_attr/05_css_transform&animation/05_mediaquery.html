@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <title>Mediaquery</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      .media {
+        background-color: pink;
+      }
+
+      @media screen and (max-width: 800px) {
+        .media {
+          background-color: gold;
+        }
+      }
+
+      @media screen and (min-width: 1200px) {
+        .media {
+          background-color: skyblue;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="media">mediaquery</div>
+  </body>
+</html>

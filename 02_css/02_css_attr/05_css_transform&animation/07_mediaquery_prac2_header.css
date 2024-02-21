@@ -1,0 +1,87 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  background-color: lightblue;
+}
+
+header .inner {
+  position: relative;
+  height: 100%;
+  margin: auto;
+  max-width: 1200px;
+  padding: 0 1.5rem;
+}
+
+header .inner .logo {
+  line-height: 100px;
+  position: absolute;
+  /* i는 font-size로 크기 조정 */
+  font-size: 50px;
+  color: aliceblue;
+}
+
+header .inner .menu {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .inner .menu li {
+  margin: 0 10px;
+}
+
+.small-menu,
+.menu-bar {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .small-menu,
+  .menu-bar {
+    display: block;
+  }
+
+  header .inner .logo {
+    left: calc(50% - 25px);
+  }
+
+  header .inner .menu-bar {
+    position: absolute;
+    font-size: 30px;
+    line-height: 100px;
+    right: 5%;
+  }
+
+  header .small-menu {
+    display: flex;
+    flex-direction: column;
+  }
+  header .small-menu li {
+    background-color: aliceblue;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  header .small-menu li:hover {
+    background-color: rgb(50, 119, 180);
+    color: white;
+  }
+
+  /* .menu만 하면 우선순위가 밀림 선택자가 길어야하는구나! */
+  header .inner .menu {
+    display: none;
+  }
+}
