@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>transform prac</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .img-container {
+            display: flex;
+            padding: 100px 30px;
+
+        }
+
+        .img {
+            width: 250px;
+            height: 150px;
+
+            transition: 1s;
+        }
+
+        img{
+            width: 100%;
+            height: 100%;
+
+            
+            transform: skew(0deg, 25deg);
+        }
+
+        .img:hover {
+            transform: skew(0);
+        }
+
+        .img1 {
+            z-index: 3;
+        }
+
+        .img2 {
+            transform: translateX(-100px);
+            z-index: 2;
+            
+        }
+        .img3 {
+            transform: translateX(-200px);
+            z-index: 1;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="img-container">
+       <span class="img img1"> <img src="../img/beach1.jpg" alt="" /></span>
+       <span class="img img2"> <img src="../img/beach2.jpg" alt="" /></span>
+       <span class="img img3"> <img src="../img/beach3.jpg" alt="" /></span>        
+  </body>
+</html>
