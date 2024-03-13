@@ -94,3 +94,17 @@ function hello(name) {
 const username = "따요";
 hello(username);
 // hello();
+
+const multifly = (num1, num2) => {
+  return Number(num1) * Number(num2);
+};
+
+console.log(multifly(3, 7));
+console.log(multifly(2, 2));
+
+const square = (num) => {
+  return Number(num) ** 2;
+};
+
+console.log(square(4));
+console.log(square(11));
