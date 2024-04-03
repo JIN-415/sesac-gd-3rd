@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator 실습</title>
+    <script defer src="./calculator.js"></script>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+      }
+      .container > label {
+        margin-bottom: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <label>값1:<input type="text" id="num1" /></label>
+      <label>값2:<input type="text" id="num2" /></label>
+      <label>연산자:<input type="text" id="operator" /></label>
+      <label>결과:<input type="text" id="result" /></label>
+      <br />
+      <div>
+        <button type="button" id="calculate">계산하기</button>
+        <button type="button" id="reset">초기화</button>
+      </div>
+    </div>
+  </body>
+</html>
