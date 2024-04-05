@@ -1,0 +1,21 @@
+.book {
+  margin-top: 50px;
+  background-color: beige;
+}
+
+.book .top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.top > h1 {
+  color: orange;
+}
+
+.book .content {
+  margin-left: 130px;
+  padding-bottom: 50px;
+  font-weight: bold;
+}
