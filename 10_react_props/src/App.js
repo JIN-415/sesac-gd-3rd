@@ -3,8 +3,9 @@ import FuncProps from './components/FuncProps';
 import './App.css';
 import FoodProps from './components/FavoriteFoodProps';
 import FuncBookProps from './components/FuncBookProps';
-import ProductList from './components/ProductList';
+import ProductItem from './components/ProductItem';
 import ClassPropsPrac from './components/ClassPropsPrac';
+import ProductContainer from './components/ProductContainer';
 
 function App() {
   // const sayHi = () => {
@@ -118,15 +119,18 @@ function App() {
 
       {/* ----------------------실습---------------------- */}
 
-      <FoodProps food='떡볶이' />
+      {/* <FoodProps food='떡볶이' />
       <FuncBookProps title='나의 하루의 시작은 냐옹냐옹' author='진냐옹' price='55,555' type='역사' />
       <ClassPropsPrac text='실습 3번 text' valid='콘솔 띄우기 성공' />
-      <ClassPropsPrac valid='콘솔 띄우기 성공' />
+      <ClassPropsPrac valid='콘솔 띄우기 성공' /> */}
 
       {/* ----------------------Product List---------------------- */}
       {/* {products.map((prod) => {
-        return <ProductList prodData={prod} key={prod.id} />;
+        return <ProductItem prodData={prod} key={prod.id} />;
       })} */}
+
+      {/* 연습 develop */}
+      <ProductContainer products={products} />
     </div>
   );
 }
