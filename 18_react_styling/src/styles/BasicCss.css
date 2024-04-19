@@ -1,0 +1,25 @@
+div {
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: cornflowerblue;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: aliceblue;
+}
+
+.item {
+  color: chocolate;
+}
+
+.item1 {
+  font-weight: bold;
+}
